@@ -1,7 +1,7 @@
 // Business constants that can be reused across the application
-export const BUSINESS_NAME = "Acme Consulting";
-export const BUSINESS_EMAIL = "info@acmeconsulting.com";
-export const BUSINESS_PHONE = "555-123-4567";
+export const BUSINESS_NAME = "Harbor Table";
+export const BUSINESS_EMAIL = "reserve@harbortable.co";
+export const BUSINESS_PHONE = "555-016-7780";
 
 // Service types
 export const SERVICE_TYPES = {
@@ -20,9 +20,9 @@ export const TIME_FORMAT = {
 
 // Brand settings
 export const BRAND_COLORS = {
-  PRIMARY: "hsl(212, 82%, 45%)",
-  SECONDARY: "hsl(277, 75%, 84%)",
-  ACCENT: "hsl(22, 90%, 57%)",
+  PRIMARY: "hsl(181, 58%, 22%)",
+  SECONDARY: "hsl(202, 54%, 92%)",
+  ACCENT: "hsl(9, 76%, 55%)",
 };
 
 export const BOOKINGS_APP_ID = "13d21c63-b5ec-5912-8397-c3a5ddb27a97";

@@ -1,5 +1,16 @@
 ---
 import "../styles/global.css";
+import { BUSINESS_NAME } from "../utils/constants";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = `${BUSINESS_NAME} | Tasting Reservations`,
+  description = "Reserve restaurant tastings through a Wix Headless booking experience.",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -8,8 +19,9 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <title>Appointment Scheduler</title>
+    <title>{title}</title>
   </head>
   <body>
     <slot />
