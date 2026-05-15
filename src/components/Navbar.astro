@@ -8,12 +8,13 @@ import { BUSINESS_NAME } from '../utils/constants';
       <div class="flex items-center">
         <a href="/" class="flex items-center gap-3 text-white">
           <span class="grid h-9 w-9 place-items-center rounded-lg border border-white/20 bg-white/10 text-sm font-semibold">HT</span>
-          <span class="text-lg font-semibold">{BUSINESS_NAME}</span>
+          <span class="hidden text-lg font-semibold sm:inline">{BUSINESS_NAME}</span>
+          <span class="text-lg font-semibold sm:hidden">Harbor</span>
         </a>
       </div>
       <nav class="flex items-center gap-1">
         <a href="/" class="px-3 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors">Home</a>
-        <a href="/schedule" class="px-3 py-2 text-sm font-medium text-white bg-white/10 rounded-lg hover:bg-accent transition-colors">Reserve</a>
+        <a href="/schedule" class="px-3 py-2 text-sm font-semibold text-white bg-accent rounded-lg hover:bg-accent/90 transition-colors">Reserve</a>
       </nav>
     </div>
   </div>

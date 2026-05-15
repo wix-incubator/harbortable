@@ -22,28 +22,37 @@ import { BUSINESS_NAME } from "../utils/constants";
 
       <section class="harbor-schedule-header mb-8 animate-fade-up">
         <div>
-          <p class="mb-4 text-sm font-semibold uppercase text-secondary/80">Reservation desk</p>
-          <h1 class="max-w-3xl text-4xl font-semibold leading-tight text-white md:text-5xl">
+          <p class="mb-4 text-sm font-semibold uppercase text-secondary/80">Reservation desk / live Wix openings</p>
+          <h1 class="max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
             Reserve a tasting at {BUSINESS_NAME}.
           </h1>
         </div>
-        <p class="max-w-2xl text-base leading-7 text-white/70">
-          Select an inquiry or paid tasting, then choose a live opening from Wix Bookings. The service catalog, reservation slot, and checkout path stay connected behind this branded dining flow.
-        </p>
+        <div class="space-y-4">
+          <p class="max-w-2xl text-base leading-7 text-white/70">
+            Select an inquiry or paid tasting, then choose a live opening from Wix Bookings. The service catalog, reservation slot, and checkout path stay connected behind this branded dining flow.
+          </p>
+          <div class="harbor-schedule-note">
+            <span></span>
+            <strong>Availability and paid tasting checkout remain tied to Wix service data.</strong>
+          </div>
+        </div>
       </section>
 
       <div class="mb-8 grid gap-3 sm:grid-cols-3 animate-fade-up delay-100">
-        <div class="rounded-lg bg-white p-4 shadow-xs">
-          <p class="text-xs font-semibold uppercase text-accent">Tasting</p>
-          <p class="mt-1 font-medium">Select the reservation path</p>
+        <div class="harbor-step-card">
+          <p>Tasting</p>
+          <strong>Select the reservation path</strong>
+          <span>Start with an inquiry or paid chef's counter service.</span>
         </div>
-        <div class="rounded-lg bg-white p-4 shadow-xs">
-          <p class="text-xs font-semibold uppercase text-accent">Opening</p>
-          <p class="mt-1 font-medium">Pick a live service time</p>
+        <div class="harbor-step-card">
+          <p>Opening</p>
+          <strong>Pick a live service time</strong>
+          <span>Bookable windows come from Wix availability.</span>
         </div>
-        <div class="rounded-lg bg-white p-4 shadow-xs">
-          <p class="text-xs font-semibold uppercase text-accent">Guest</p>
-          <p class="mt-1 font-medium">Confirm the party details</p>
+        <div class="harbor-step-card">
+          <p>Guest</p>
+          <strong>Confirm the party details</strong>
+          <span>Reservation details stay visible through confirmation.</span>
         </div>
       </div>
 
@@ -51,7 +60,7 @@ import { BUSINESS_NAME } from "../utils/constants";
         <SessionType />
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="harbor-scheduler-grid grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div class="animate-fade-up delay-200">
           <DatePicker />
         </div>

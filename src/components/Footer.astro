@@ -4,14 +4,17 @@ import { BUSINESS_NAME } from '../utils/constants';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="py-10 px-4 bg-primary text-white">
-  <div class="max-w-7xl mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+<footer class="py-12 px-4 bg-primary text-white">
+  <div class="max-w-7xl mx-auto grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
     <div>
       <p class="text-sm font-semibold">{BUSINESS_NAME}</p>
-      <p class="mt-1 text-sm text-white/60">Wix Headless reservations for tasting menus, table inventory, and paid dining events.</p>
+      <p class="mt-2 max-w-xl text-sm leading-6 text-white/60">Wix Headless reservations for tasting menus, table inventory, guest details, and paid dining events.</p>
     </div>
-    <p class="text-sm text-white/60">
-      &copy; {currentYear} {BUSINESS_NAME}. Reserved by the water.
-    </p>
+    <div class="flex flex-col gap-2 text-sm text-white/60 sm:items-end">
+      <a class="font-semibold text-white transition-colors hover:text-secondary" href="/schedule">Reserve a tasting</a>
+      <p>&copy; {currentYear} {BUSINESS_NAME}. Powered by Wix Headless.</p>
+      <a class="font-semibold text-white transition-colors hover:text-secondary" href="https://www.wix-headless.dev" target="_blank" rel="noreferrer">Built with wix-headless.dev</a>
+      <a class="font-semibold text-white transition-colors hover:text-secondary" href="https://github.com/wix-incubator/harbortable" target="_blank" rel="noreferrer">View source on GitHub</a>
+    </div>
   </div>
 </footer>
